@@ -5,6 +5,7 @@ package tetris.game.com.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -16,6 +17,7 @@ import tetris.game.com.entity.Score;
 import tetris.game.com.service.ScoreService;
 
 @RestController
+@CrossOrigin
 @RequestMapping("/score")
 public class tetrisController {
  @Autowired
