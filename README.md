@@ -1,4 +1,4 @@
-# Tetri Backend API
+# Tetris Backend API
 # End Points: 
 - post: http://localhost:8080/score
   ###  {
