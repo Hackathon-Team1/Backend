@@ -1,6 +1,7 @@
 package tetris.game.com.service;
 
 import java.util.List;
+import org.springframework.data.domain.Sort;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -16,10 +17,13 @@ public class ScoreService {
 	 return scoreRepository.findByName(name);
  }
  public List<Score> getScores(){
-	 List <Score> list =(List<Score>) scoreRepository.findAll();
+	 List <Score> list =(List<Score>) scoreRepository.findAll(Sort.by(Sort.Direction.DESC, "score"));
 		return  list;
 	}
 	
+	
+
+
 	public Score createScore(Score score) {
 		return scoreRepository.save(score);
 	}
