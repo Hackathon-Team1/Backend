@@ -1,4 +1,5 @@
 # Tetris Backend API
+### Notes: please fill up the username and password for database in the application.properties file.
 # End Points: 
 - post: http://localhost:8080/score
   ###  {
